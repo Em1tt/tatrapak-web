@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-quicksand-bold{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-cherry {
+  font-family: "Cherry Cream Soda", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-din {
+  font-family: "din-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-alfabet {
+  font-family: "alfabet", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-alfabet-bold {
+  font-family: "alfabet", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --brown-dark: #754c29;
+  --brown: #8b5e3c;
+  --brown-light: #c49a6c;
+  --white: #f7fff7;
+  --midnight: #241e4e;
+  --header-height: 110px;
+  --content-padding: 1rem;
+  --content-width: 1280px;
+  --border-radius: 6px;
+}
+
+header {
+  height: var(--header-height);
+  align-content: center;
+}
+
+header > div,
+section > div {
+  max-width: var(--content-width);
+  padding-inline: var(--content-padding);
+  margin-inline: auto;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div a {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  height: calc();
+  position: relative;
+  display: block;
+  height: fit-content;
+}
+
+main div.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100%;
+  padding: 4rem var(--content-padding);
+  max-width: var(--content-width);
+  margin-inline: auto;
+  gap: 4rem;
+}
+
+main div.grid .keksikWrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+main div.grid .keksik {
+  width: 200px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+}
+main div.grid .keksik2 {
+  display: none;
+}
+main div.grid .keksik3 {
+  display: none;
+}
+
+main div.bg1 {
+  position: absolute;
+  background: url("../static/jezkopattern.svg");
+  height: 100%;
+  display: block;
+  background-size: 80px;
+  opacity: 0.1;
+  width: 100%;
+  z-index: -50;
+}
+main div.bg2 {
+  position: absolute;
+  background: var(--brown);
+  height: 100%;
+  display: block;
+  width: 100%;
+  z-index: -51;
+}
+
+main .hero-text {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+main .hero-text h1 {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+main .hero-text p {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+main .hero-text div {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.zlozenie img.jezko {
+    margin-top: -50px;
+    position: absolute;
+    width: 100px;
+    margin-right: 0px;
+    right: 50px;
+  }
+.zlozenie img.oriesky {
+  margin-top: -150px;
+  position: absolute;
+  margin-left: 10px;
+  width: 300px;
+  pointer-events: none;
+}
+
+section.zlozenie {
+  background: var(--white);
+}
+
+section.zlozenie > div {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+section.zlozenie div > .grid {
+  display: grid;
+  grid-template-columns: 
+repeat(auto-fit, minmax(280px, 1fr));
+justify-content: center;
+}
+
+section.zlozenie .grid div{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+section.zlozenie h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 7rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  main div.grid {
+    grid-template-columns: 1fr 300px;
+  }
+  main div.grid .keksik2 {
+    display: block;
+    position: absolute;
+    rotate: 4deg;
+    top: 50px;
+    left: 0;
+    width: 250px;
+  }
+  main div.grid .keksik3 {
+    display: block;
+    position: absolute;
+    rotate: -15deg;
+    top: 100px;
+    right: 10px;
+    width: 270px;
+  }
+  main div.grid .keksik {
+    display: none;
+  }
+
+  .zlozenie img.jezko {
+    margin-top: -50px;
+    position: absolute;
+    width: 100px;
+    margin-right: 0px;
+    right: 50px;
+  }
+  .zlozenie img.oriesky {
+    margin-top: -200px;
+    position: absolute;
+    width: 400px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main div.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  main div.grid .keksik2 {
+    display: block;
+    position: absolute;
+    rotate: 4deg;
+    top: 30px;
+    left: 0;
+  }
+  main div.grid .keksik3 {
+    display: block;
+    position: absolute;
+    rotate: -15deg;
+    top: 100px;
+    right: 10px;
+  }
+  main div.grid .keksik {
+    display: none;
+  }
+  .zlozenie img.jezko {
+    margin-top: -50px;
+    position: absolute;
+    width: 100px;
+    margin-right: 0px;
+    right: 50px;
+  }
+  .zlozenie img.oriesky {
+    margin-top: -200px;
+    position: absolute;
+    width: 400px;
+    margin-left: 200px;
+  }
+  main div.grid .keksikWrapper {
+    height: 400px;
+  }
+}
+
+.button-primary {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--brown-light);
+  color: var(--white);
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.button-primary:hover {
+  filter: brightness(0.9);
+}
