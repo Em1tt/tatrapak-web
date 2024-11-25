@@ -10,4 +10,4 @@ services:
             dockerfile: Dockerfile
             target: base
         ports:
-            - "8101:80"
+            - "8102:80"
