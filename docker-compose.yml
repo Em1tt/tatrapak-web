@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-    php:
+    tatrapak-web:
         container_name: tatrapak-web
         image: php
         restart: always
