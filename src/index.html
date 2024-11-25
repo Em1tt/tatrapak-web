@@ -1,66 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/yzh1ynh.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://use.typekit.net/yzh1ynh.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href="">
-                <img src="./static/logo.svg" alt="Logo Ňamli" width="100">
-            </a>
-            <a href=""></a>
-            <a href=""></a>
-        </div>
+      <div>
+        <a href="/">
+          <img src="./static/logo.svg" alt="Logo Ňamli" width="70" />
+        </a>
+        <a class="font-quicksand" href="#vyhody">O Ňamli</a>
+        <a class="font-quicksand" href="#zlozenie">Zloženie</a>
+      </div>
     </header>
     <main>
-        <div class="bg2"></div>
-        <div class="bg1"></div>
-        <div class="grid">
-            <div class="hero-text">
-                <h1 class="font-alfabet-bold">Ňamli</h1>
-                <p class="font-alfabet">Ňamli is a platform that allows you to create your own recipes and share them with the world. You can also
-                    search for recipes created by other users and save them to your profile.</p>
-                <div>
-                    <a class="button-primary font-din" href="./login.php" class="button">Zistiť viac</a>
-                </div>
-            </div>
-            <div class="keksikWrapper">
-                <img class="keksik" src="./static/NamliVertical.png" alt="Hero" width="200">
-                <img class="keksik2" src="./static/Namli.png" alt="Hero" width="400">
-                <img class="keksik3" src="./static/Namli.png" alt="Hero" width="440">
-            </div>
+      <div class="bg2"></div>
+      <div class="bg1"></div>
+      <div class="grid">
+        <div class="hero-text">
+          <h1 class="font-quicksand-bold">Ňamli</h1>
+          <p class="font-quicksand">
+            Predstavujeme nový keksík Ňamli! Vychutnajte si jedinečnú kombináciu
+            vrstiev oblátok, nugátového a mliečného krému, lieskových orieškov a
+            kakaa. Dokonalá harmónia chutí, ktorá vás očarí.
+          </p>
+          <div>
+            <a class="button-primary font-quicksand-bold" href="#vyhody"
+              >Zistiť viac</a
+            >
+          </div>
         </div>
+        <div class="keksikWrapper">
+          <img
+            class="keksik"
+            src="./static/NamliVertical.png"
+            alt="Hero"
+            width="200"
+          />
+          <img
+            class="keksik2"
+            src="./static/Namli.png"
+            alt="Hero"
+            width="400"
+          />
+          <img
+            class="keksik3"
+            src="./static/Namli.png"
+            alt="Hero"
+            width="440"
+          />
+        </div>
+      </div>
     </main>
-    <section class="zlozenie">
-        <img class="jezko" src="./static/jezkocut.svg" width="300" alt="">
-        <img class="oriesky" src="./static/Lieks_Ories.png" width="400" alt="">
-        <div>
-            <h2 class="font-quicksand">Zloženie</h2>
-            <div class="grid">
-                <div>
-                    <img src="./static/icons/Checkmark.svg" alt="Len overené suroviny" width="80">
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </div>
+    <section id="vyhody" class="vyhody">
+      <img class="jezko" src="./static/jezkocut.svg" width="300" alt="" />
+      <img class="oriesky" src="./static/Lieks_Ories.png" width="400" alt="" />
+      <div>
+        <h2 class="font-quicksand-bold">Prečo si vybrať Ňamli?</h2>
+        <div class="grid">
+          <div>
+            <img
+              src="./static/icons/Checkmark.svg"
+              alt="Garancia kvality"
+              width="80"
+            />
+            <h3 class="font-quicksand-bold">Garancia kvality</h3>
+            <p class="font-quicksand">
+              Naša garancia kvality zaručuje, že každý keksík Ňamli je vyrobený
+              z tých najlepších surovín a prechádza prísnymi kontrolami, aby sme
+              vám priniesli len to najlepšie.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./static/icons/Award.svg"
+              alt="Kvalitné suroviny"
+              width="80"
+            />
+            <h3 class="font-quicksand-bold">Kvalitné suroviny</h3>
+            <p class="font-quicksand">
+              Na výrobu keksíkov Ňamli používame len tie najkvalitnejšie
+              suroviny, ktoré zaručujú vynikajúcu chuť a výživovú hodnotu.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./static/icons/Heart.svg"
+              alt="Zdravšia voľba"
+              width="80"
+            />
+            <h3 class="font-quicksand-bold">Chutí aj bez "E"čok</h3>
+            <p class="font-quicksand">
+              Keksíky Ňamli sú vyrobené bez umelých prísad a "E"čok, takže si
+              môžete vychutnať ich skvelú chuť bez kompromisov.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+    <section id="zlozenie" class="zlozenie">
+      <img
+        class="milkSplash"
+        src="./static/MilkSplash.png"
+        width="800"
+        alt=""
+      />
+      <img
+        class="chocoSplash"
+        src="./static/ChocolateSplash.png"
+        width="800"
+        alt=""
+      />
+      <div>
+        <h2 class="font-quicksand-bold">Zloženie Ňamli</h2>
 
+        <div class="kremy">
+          <div class="text">
+            <h3 class="font-quicksand-bold left">Nugátový mliečný krém</h3>
+            <p class="font-quicksand left">
+              Dokonalé spojenie nugátovej chuti a mliečného krému dodáva výraznú
+              a nezameniteľnú chuť nášmu keksíku
+            </p>
+          </div>
+          <div class="imageWrapper right">
+            <img width="400" src="./static/MliekoPohar.png" />
+          </div>
+        </div>
+        <div class="oriesky">
+          <div class="imageWrapper left">
+            <img width="400" src="./static/Hazelnut.png" />
+          </div>
+          <div class="text">
+            <h3 class="font-quicksand-bold right">Lieskové oriešky</h3>
+            <p class="font-quicksand right">
+              Po starostlivom výbere orieškov si viete Ňamli vychutnať a potešiť
+              tak vaše chuťové poháriky
+            </p>
+          </div>
+        </div>
+        <div class="kakao">
+          <div class="text">
+            <h3 class="font-quicksand-bold left">Kvalitné kakao</h3>
+            <p class="font-quicksand left">
+              Kakao od nášho sprostredkovateľa prináša hlbokú čokoládovú chuť a
+              nezabudnuteľný pôžitok
+            </p>
+          </div>
+          <div class="imageWrapper right">
+            <img width="400" src="./static/CocoaPowder.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a href="/">
+          <img src="./static/logo.svg" alt="Logo Ňamli" width="70" />
+        </a>
+        <a class="font-quicksand" href="#vyhody">O Ňamli</a>
+        <a class="font-quicksand" href="#zlozenie">Zloženie</a>
+      </div>
+      <div class="footnote">
+        <p class="font-quicksand">© 2024 Tatrapak.sk</p>
+        <p class="font-quicksand credit">
+          Website made by
+          <a href="https://github.com/em1tt">Richard Marcinčák</a> and Marko
+          Kušnirák
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

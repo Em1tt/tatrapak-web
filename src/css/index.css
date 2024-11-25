@@ -5,17 +5,17 @@
 }
 
 .font-quicksand {
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.font-quicksand-bold{
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
+.font-quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .font-cherry {
@@ -48,19 +48,20 @@
   --brown-light: #c49a6c;
   --white: #f7fff7;
   --midnight: #241e4e;
-  --header-height: 110px;
+  --header-height: 80px;
   --content-padding: 1rem;
   --content-width: 1280px;
   --border-radius: 6px;
+  scroll-behavior: smooth;
 }
 
 header {
   height: var(--header-height);
-  align-content: center;
 }
 
 header > div,
-section > div {
+section > div,
+footer > div {
   max-width: var(--content-width);
   padding-inline: var(--content-padding);
   margin-inline: auto;
@@ -68,13 +69,22 @@ section > div {
 
 header > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  height: 100%;
+  gap: 2rem;
 }
 
 header > div a {
   display: flex;
   align-items: center;
+  color: var(--brown-dark);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+header > div a:hover {
+  color: var(--brown-light);
 }
 
 main {
@@ -99,6 +109,7 @@ main div.grid .keksikWrapper {
   display: grid;
   place-items: center;
   width: 100%;
+  padding-bottom: 4rem;
 }
 
 main div.grid .keksik {
@@ -155,49 +166,196 @@ main .hero-text div {
   margin-top: 1rem;
 }
 
-.zlozenie img.jezko {
-    margin-top: -50px;
-    position: absolute;
-    width: 100px;
-    margin-right: 0px;
-    right: 50px;
-  }
-.zlozenie img.oriesky {
-  margin-top: -150px;
+.vyhody img.jezko {
+  margin-top: -50px;
+  position: absolute;
+  width: 100px;
+  margin-right: 0px;
+  right: 50px;
+}
+.vyhody img.oriesky {
+  margin-top: -100px;
   position: absolute;
   margin-left: 10px;
-  width: 300px;
+  width: 200px;
   pointer-events: none;
 }
 
-section.zlozenie {
+section.vyhody {
   background: var(--white);
 }
 
-section.zlozenie > div {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
+section.vyhody > div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
 }
 
-section.zlozenie div > .grid {
+section.vyhody div > .grid {
   display: grid;
-  grid-template-columns: 
-repeat(auto-fit, minmax(280px, 1fr));
-justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 3rem;
+  padding-bottom: 7rem;
 }
 
-section.zlozenie .grid div{
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 1rem;
-    align-items: center;
+section.vyhody .grid div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;
 }
 
-section.zlozenie h2{
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 7rem;
+section.vyhody h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+}
+
+section.vyhody .grid img {
+  padding: 1rem;
+  background: var(--brown);
+  border-radius: 50%;
+}
+
+section.vyhody .grid div p {
+  text-align: center;
+}
+
+section.zlozenie {
+  padding: 4rem 0;
+  position: relative;
+  background: #f6f0e6;
+  overflow-x: hidden;
+}
+
+section.zlozenie > div {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6rem;
+  align-items: center;
+}
+
+section.zlozenie > div > div {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+section.zlozenie > div > div > div.text {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  rotate: 0deg;
+}
+
+section.zlozenie > div > div > div.text h3 {
+  font-size: 1.4rem;
+}
+
+section.zlozenie > div > div > div.text p {
+  font-size: 1.1rem;
+}
+
+section.zlozenie > div div .imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.zlozenie > div div.oriesky .imageWrapper {
+  grid-row: 2;
+}
+
+section.zlozenie > div div img {
+  width: 200px;
+  rotate: 0deg;
+}
+
+section.zlozenie h2 {
+  text-align: center;
+  font-size: 2rem;
+  rotate: 0deg;
+}
+
+.milkSplash {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  z-index: 0;
+  top: 60px;
+  opacity: 0.4;
+}
+
+.chocoSplash {
+  position: absolute;
+  left: -20%;
+  pointer-events: none;
+  z-index: 0;
+  bottom: 60px;
+  opacity: 0.2;
+  width: 600px;
+}
+
+.left {
+  text-align: center;
+}
+
+.right {
+  text-align: center;
+}
+
+footer{
+  padding: 1rem 0 0 0;
+  background: var(--white);
+}
+
+footer > div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer > div a {
+  display: flex;
+  align-items: center;
+  color: var(--brown-dark);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+footer > div a:hover {
+  color: var(--brown-light);
+}
+
+footer .footnote{
+  max-width: unset;
+  width: 100vw;
+  padding: var(--content-padding);
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  color: var(--white);
+  gap: 0.5rem;
+  background: var(--brown-dark);
+}
+
+.credit{
+  font-size: 0.9rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.3rem;
+}
+
+.credit a{
+  font-size: 0.9rem;
+  color: var(--brown-light);
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -224,18 +382,70 @@ section.zlozenie h2{
     display: none;
   }
 
-  .zlozenie img.jezko {
+  .vyhody img.jezko {
     margin-top: -50px;
     position: absolute;
     width: 100px;
     margin-right: 0px;
     right: 50px;
   }
-  .zlozenie img.oriesky {
+  .vyhody img.oriesky {
     margin-top: -200px;
     position: absolute;
     width: 400px;
     margin-left: 100px;
+  }
+
+  section.zlozenie > div div.oriesky .imageWrapper {
+    grid-row: unset;
+  }
+
+  .milkSplash {
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    top: -80px;
+    width: 600px;
+    opacity: 0.4;
+  }
+  .chocoSplash {
+    position: absolute;
+    left: -100px;
+    pointer-events: none;
+    bottom: 120px;
+    width: 700px;
+    opacity: 0.3;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  section.zlozenie > div div .imageWrapper.left {
+    justify-content: center;
+  }
+  section.zlozenie > div div .imageWrapper.right {
+    justify-content: center;
+  }
+
+  section.zlozenie > div {
+    gap: 2rem;
+  }
+
+  section.zlozenie > div div img {
+    width: 300px;
+    rotate: 0deg;
+  }
+  .vyhody img.oriesky {
+    margin-top: -150px;
+    position: absolute;
+    margin-left: 10px;
+    width: 300px;
+    pointer-events: none;
   }
 }
 
@@ -260,14 +470,14 @@ section.zlozenie h2{
   main div.grid .keksik {
     display: none;
   }
-  .zlozenie img.jezko {
+  .vyhody img.jezko {
     margin-top: -50px;
     position: absolute;
     width: 100px;
     margin-right: 0px;
     right: 50px;
   }
-  .zlozenie img.oriesky {
+  .vyhody img.oriesky {
     margin-top: -200px;
     position: absolute;
     width: 400px;
@@ -275,6 +485,66 @@ section.zlozenie h2{
   }
   main div.grid .keksikWrapper {
     height: 400px;
+    padding-bottom: 0rem;
+  }
+
+  section.zlozenie > div div.oriesky .imageWrapper {
+    grid-row: unset;
+  }
+
+  .milkSplash {
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    top: -200px;
+    width: 1000px;
+    opacity: 0.4;
+  }
+
+  .chocoSplash {
+    position: absolute;
+    left: -100px;
+    pointer-events: none;
+    bottom: 0px;
+    width: 1000px;
+    opacity: 0.2;
+  }
+
+  .left {
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  section.zlozenie > div div .imageWrapper.left {
+    justify-content: left;
+  }
+  section.zlozenie > div div .imageWrapper.right {
+    justify-content: right;
+  }
+
+  
+  section.zlozenie > div {
+    gap: 2rem;
+  }
+
+  section.zlozenie > div > div{
+    width: 900px;
+  }
+
+  section.zlozenie > div div img {
+    width: 300px;
+    rotate: 0deg;
+  }
+
+  .vyhody img.oriesky {
+    margin-top: -150px;
+    position: absolute;
+    margin-left: 10px;
+    width: 300px;
+    pointer-events: none;
   }
 }
 
@@ -283,7 +553,7 @@ section.zlozenie h2{
   border-radius: var(--border-radius);
   background-color: var(--brown-light);
   color: var(--white);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 .button-primary:hover {
