@@ -27,3 +27,6 @@ Tento projekt je promo webová stránka pre keksík Ňamli, ktorý vznikol v na�
 ## Repozitár
 
 Repozitár projektu nájdete na https://github.com/Em1tt/tatrapak-web.
+
+## Kredit
+Vyrobené v spolupráci s Markom Kušnirákom.
