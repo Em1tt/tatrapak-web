@@ -55,6 +55,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 header {
   height: var(--header-height);
 }
